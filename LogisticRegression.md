@@ -1,7 +1,6 @@
 # Logistic Regression
 
-Make sure to check out the [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning) on coursera taught by Prof. Andrew NG. It is an absolutely brilliant course and I learnt so much from there.<br> 
-To understand the concept of Logistic Regression you can take a look at this [medium article](https://medium.com/data-science-group-iitr/logistic-regression-simplified-9b4efe801389). It does a good job in simplifying the explanation.
+Make sure to check out the [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning) on coursera taught by Prof. Andrew NG, to get a better in dept understanding of Logistic Regression and Deep Learning in general. It is an absolutely brilliant course and I learnt so much from there.<br> 
 
 Assuming now that you have understood the concept of Logistic Regression lets dive into the code.<br>
 **To implement Logistic Regression you will need 5 helper function and 1 function to encapsulate the helper functions and model your algorithm.**<br>
