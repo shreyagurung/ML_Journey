@@ -25,8 +25,7 @@ train_set_x = train_set_x_flatten/255.
 test_set_x = test_set_x_flatten/255.
 
 def sigmoid(z):
-    s = 1/(1+np.exp(-z))
-    
+    s = 1/(1+np.exp(-z))    
     return s
 
  def initialize_with_zeros(dim):
@@ -68,7 +67,7 @@ def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
     
     for i in range(num_iterations):
     
-        # Cost and gradient calculation (≈ 1-4 lines of code)
+        # Cost and gradient calculation
         grads, cost = propagate(w,b,X,Y)
         
         # Retrieve derivatives from grads
@@ -119,17 +118,17 @@ def predict(w, b, X):
 
 def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate = 0.5, print_cost = False):
     
-    # initialize parameters with zeros (≈ 1 line of code)
+    # initialize parameters with zeros
     w, b = initialize_with_zeros(X_train.shape[0])
 
-    # Gradient descent (≈ 1 line of code)
+    # Gradient descent
     parameters, grads, costs = optimize(w,b,X_train,Y_train,num_iterations, learning_rate, print_cost = False)
     
     # Retrieve parameters w and b from dictionary "parameters"
     w = parameters["w"]
     b = parameters["b"]
     
-    # Predict test/train set examples (≈ 2 lines of code)
+    # Predict test/train set examples
     Y_prediction_test = predict(w,b,X_test)
     Y_prediction_train = predict(w,b,X_train)
 
