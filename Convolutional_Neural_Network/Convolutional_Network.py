@@ -98,7 +98,6 @@ def model(X_train, Y_train, X_test, Y_test, learning_rate = 0.009,
     costs = []                                        # To keep track of the cost
     
     # Create Placeholders of the correct shape
-    ### START CODE HERE ### (1 line)
     X, Y = create_placeholders(n_H0, n_W0, n_C0, n_y)
 
     # Initialize parameters
