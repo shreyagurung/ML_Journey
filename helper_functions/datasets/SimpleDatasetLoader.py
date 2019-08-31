@@ -8,7 +8,7 @@ Created on Sat Aug 24 17:36:54 2019
 import numpy as np
 import cv2
 import os
-from pyimagesearch.preprocessing import SimplePreprocessor
+from helper_functions.preprocessing import SimplePreprocessor
 
 class SimpleDatasetLoader:
     def __init__(self, preprocessors = None):
